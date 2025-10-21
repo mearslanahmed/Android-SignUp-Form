@@ -3,7 +3,10 @@
 A fully-functional sign-up form for an Android application, built as a university assignment. This project features a custom-styled UI, form validation, and a date picker.
 
 ## Screenshot
-(Drag and drop one of your app screenshots here! This is the most important part.)
+<p>
+   <img src="docs/SignupPage1.png" alt="App Screenshot" width="300"/>
+   <img src="docs/SignUpPage2.png" alt="App Screenshot" width="300"/>
+</p>
 
 
 ## Features
@@ -20,9 +23,3 @@ A fully-functional sign-up form for an Android application, built as a universit
 * **Android SDK**
 * **View Binding:** For safely accessing UI elements.
 * **XML** for layouts (featuring `CardView`, `ScrollView`, and `LinearLayout`).
-
-## 📱 Screenshot
-<p align="center">
-  <img src="docs/SignUpPage1.png" alt="App Screenshot" width="300"/>
-  <img src="docs/SignUpPage2.png" alt="App Screenshot" width="300"/>
-</p>
