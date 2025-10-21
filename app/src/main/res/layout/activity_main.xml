@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbkg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_form"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/name"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_person_24"
+                    android:textColor="@color/black"
+                    android:autofillHints="name"
+                    android:drawablePadding="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/email"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:textColor="@color/black"
+                    android:autofillHints="name"
+                    android:drawablePadding="8dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:textColor="@color/black"
+                    android:autofillHints="Password"
+                    android:drawablePadding="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_password"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/confirm_password"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:textColor="@color/black"
+                    android:autofillHints="Confirm Password"
+                    android:drawablePadding="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/rGender">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rMale"
+                        android:text="@string/male"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/baseline_male_24"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rFemale"
+                        android:text="@string/female"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/baseline_female_24"
+                        android:layout_marginStart="16dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/python"
+                        android:text="@string/python"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/javascript"
+                        android:text="@string/javascript"
+                        android:layout_marginStart="16dp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cpp"
+                        android:text="@string/cpp"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateofbirth"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+                <EditText
+                    android:id="@+id/etDateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:hint="DD/MM/YYYY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/city"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/country"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skills"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:paddingTop="13dp"
+                    />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/rskills">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbeginner"
+                        android:text="@string/beginner"
+                        android:textSize="16sp"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rAdvance"
+                        android:text="@string/advance"
+                        android:textSize="16sp"
+                        />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/cbTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="I accept the terms and Conditions" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/clearbtn"
+                    android:backgroundTint="@color/lavender"
+                    android:text="@string/clear"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:id="@+id/submitbtn"
+                        android:text="@string/submit"
+                        android:backgroundTint="@color/lavender"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
